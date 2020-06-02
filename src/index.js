@@ -1,5 +1,5 @@
 import imgUrl from './img/img01.jpg'
-import './index.css'
+import './index.scss'
 
 const body = document.body
 const img = document.createElement('img')
