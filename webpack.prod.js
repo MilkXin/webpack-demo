@@ -15,6 +15,16 @@ module.exports = {
                 loader: ['babel-loader'],
                 include: path.join(__dirname, 'src'),
                 exclude: /node_modules/
+            },
+            {
+                test: /\.(jpg|png|gif)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name]_[hash].[ext]',
+                        outputPath: 'images/'
+                    }
+                }
             }
         ]
     },
