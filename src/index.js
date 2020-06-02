@@ -1,12 +1,8 @@
-const sum = (a, b) => {
-    return a + b
-}
+import imgUrl from './img/img01.jpg'
+import './index.css'
 
-const result = sum(10, 30)
-console.log(result)
-
-import url from './img/img01.jpg'
 const body = document.body
 const img = document.createElement('img')
-img.src = url
+img.classList.add('img')
+img.src = imgUrl
 body.appendChild(img)

@@ -22,9 +22,14 @@ module.exports = {
                     loader: 'file-loader',
                     options: {
                         name: '[name]_[hash].[ext]',
-                        outputPath: 'images/'
+                        outputPath: 'images/',
+                        esModule: false,
                     }
                 }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
         ]
     },
