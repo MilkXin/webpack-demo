@@ -41,6 +41,12 @@ module.exports = {
                     'sass-loader',
                     'postcss-loader'
                 ]
+            },
+            {
+                test: /\.(eot|ttf|svg)$/,
+                use: {
+                    loader: 'file-loader'
+                }
             }
         ]
     },
